@@ -6,23 +6,23 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
+  /**
+   * Bootstrap any application services.
+   *
+   * @return void
+   */
+  public function boot()
+  {
+    \Jenssegers\Date\Date::setLocale(config('app.locale'));
+  }
 
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
+  /**
+   * Register any application services.
+   *
+   * @return void
+   */
+  public function register()
+  {
+    //
+  }
 }
