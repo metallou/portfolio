@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
+@section('page', 'studies')
 @section('title', 'Formations')
-
-@section('section', 'Formations')
+@section('name', 'Formations')
 
 @section('content')
 <div class="card-body container-fluid">
   @foreach($aStudies as $aStudy)
     <section class="border rounded @unless($loop->first) mt-5 @endunless">
-      <h2>{{ $aStudy['name'] }}</h2>
+      <h2 class="h2 text-primary">{{ $aStudy['name'] }}</h2>
       <p class="m-0">{{ $aStudy['location'] }}</p>
       <div class="text-right">
         <p class="d-inline-block m-0 bg-dark border border-dark rounded text-white p-2">
@@ -24,3 +24,4 @@
   @endforeach
 </div>
 @stop
+

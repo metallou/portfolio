@@ -10,9 +10,9 @@ class BaseController extends Controller
   {
     $aRoutes = array(
       'introduction' => 'Introduction',
-      'studies' => 'Fromations',
+      'studies' => 'Formations',
       'experiences' => 'Expériences',
-//      'projects' => 'Projets',
+      'projects' => 'Projets',
     );
 
     View::share('A_ROUTES', $aRoutes);

@@ -1,6 +1,11 @@
 {
-    "/js/app.js": "/js/app.js",
     "/js/vendor.js": "/js/vendor.js",
     "/css/vendor.css": "/css/vendor.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/pages/studies.js": "/js/pages/studies.js",
+    "/js/pages/projects.js": "/js/pages/projects.js",
+    "/js/pages/introduction.js": "/js/pages/introduction.js",
+    "/js/pages/experiences.js": "/js/pages/experiences.js",
+    "/js/pages/carpediem.js": "/js/pages/carpediem.js",
+    "/js/app.js": "/js/app.js"
 }

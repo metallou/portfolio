@@ -8,7 +8,7 @@
       <ul class="navbar-nav mr-auto">
         @foreach ($A_ROUTES as $name => $label)
           <li class="nav-item @if(Route::is($name)) active  @endif">
-            <a class="nav-link" href="{{ route($name) }}">{{ $label }}</a>
+            <a class="nav-link" href="{{ route($name, [], false) }}">{{ $label }}</a>
           </li>
         @endforeach
       </ul>

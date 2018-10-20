@@ -14,5 +14,10 @@ const mix = require('laravel-mix');
 mix
   .js('resources/js/vendor.js', 'public/js')
   .js('resources/js/app.js', 'public/js')
+  .js('resources/js/pages/introduction.js', 'public/js/pages')
+  .js('resources/js/pages/studies.js', 'public/js/pages')
+  .js('resources/js/pages/experiences.js', 'public/js/pages')
+  .js('resources/js/pages/projects.js', 'public/js/pages')
+  .js('resources/js/pages/carpediem.js', 'public/js/pages')
   .sass('resources/sass/vendor.scss', 'public/css')
   .sass('resources/sass/app.scss', 'public/css');

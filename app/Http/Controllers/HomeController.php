@@ -17,6 +17,7 @@ class HomeController extends BaseController
     $oToday = Date::parse('today', $timezone);
 
     $aModel = array(
+      'image' => 'profile.jpg',
       'age' => $oToday->diffInYears($oBirthDate),
       'mobile' => '+33647493737',
       'email' => 'kevincastejon13@gmail.com',
@@ -78,6 +79,7 @@ class HomeController extends BaseController
       return $a1['endDate'] < $a2['endDate'];
     };
     $fMap = function($a) {
+      $a['techs'] = implode(', ', $a['techs']);
       $a['startDate'] = $a['startDate']->format('F Y');
       $a['endDate'] = $a['endDate']->format('F Y');
 
@@ -163,10 +165,65 @@ class HomeController extends BaseController
 
   public function projects(): View
   {
+    $timezone = config('app.timezone');
+
+    $fSort = function($a1, $a2) {
+      return $a1['startDate'] < $a2['startDate'];
+    };
+    $fMap = function($a) {
+      $a['techs'] = implode(', ', $a['techs']);
+
+      return $a;
+    };
+
+    $aTest = array(
+      'name' => 'Test',
+      'startDate' => Date::parse('2017-03-12', $timezone),
+      'url' => '#',
+      'image' => 'profile.jpg',
+      'description' => 'Projet test',
+      'techs' => [
+        'PHP', 'JavaScript',
+      ],
+    );
+
+    $aProjectsRaw = [
+    ];
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    array_push($aProjectsRaw, $aTest);
+    usort($aProjectsRaw, $fSort);
+    $aProjects = array_map($fMap, $aProjectsRaw);
+
     $aModel = array(
-      'aProjects' => [],
+      'aProjects' => $aProjects,
     );
 
     return view('pages.projects', $aModel);
+  }
+
+  public function carpediem(): View
+  {
+    $aFAQ = array(
+      'framework' => array(
+        'laravel'  => 'Laravel',
+        'symfony'  => 'Symfony',
+        'homemade' => 'maison',
+        'neutral'  => 'Aucune préférence',
+      ),
+    );
+
+    $aModel = array(
+      'aFAQ' => $aFAQ,
+    );
+
+    return view('pages.carpediem', $aModel);
   }
 }

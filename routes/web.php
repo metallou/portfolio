@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@introduction')->name('introduction');
 Route::get('/studies', 'HomeController@studies')->name('studies');
 Route::get('/experiences', 'HomeController@experiences')->name('experiences');
 Route::get('/projects', 'HomeController@projects')->name('projects');
+Route::get('/carpediem', 'HomeController@carpediem')->name('carpediem');
