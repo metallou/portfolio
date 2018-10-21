@@ -14,7 +14,7 @@ class HomeController extends BaseController
     $tz = config('app.timezone');
 
     $oBirthDate = Date::parse('1993-06-18', $tz);
-    $oToday = Date::parse('today', $timezone);
+    $oToday = Date::parse('today', $tz);
     $age = $oToday->diffInYears($oBirthDate);
 
     $aModel = array(
