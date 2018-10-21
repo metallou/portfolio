@@ -11,7 +11,9 @@
       <h2 class="d-inline-block h2 text-primary">{{ $aExperience['name'] }}</h2>
       <h3 class="d-inline-block h3 text-secondary">{{ $aExperience['title'] }}</h2>
       <p class="m-0">{{ $aExperience['location'] }}</p>
-      <i>{{ $aExperience['techs'] }}</i>
+      @isset($aExperience['techs'])
+        <i>{{ $aExperience['techs'] }}</i>
+      @endisset
       <div class="text-right">
         <p class="d-inline-block m-0 bg-dark border border-dark rounded text-white p-2">
           <i class="fas fa-calendar-alt fa-2x"></i>

@@ -10,7 +10,6 @@ class BaseController extends Controller
   {
     $aRoutes = array(
       'introduction' => 'Introduction',
-      'studies' => 'Formations',
       'experiences' => 'Expériences',
       'projects' => 'Projets',
     );

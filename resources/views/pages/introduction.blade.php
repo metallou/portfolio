@@ -39,6 +39,12 @@
                     </span>
                     <a class="ml-3" href="{{ $linkedin }}" target="_blank">{{ $linkedin }}</a>
                 </li>
+                <li class="my-3">
+                    <span class="fa-li">
+                        <i class="fab fa-github fa-2x"></i>
+                    </span>
+                    <a class="ml-3" href="{{ $github }}" target="_blank">{{ $github }}</a>
+                </li>
             </ul>
         </div>
         <div class="col-lg-4 offset-lg-2 col-md-6">
