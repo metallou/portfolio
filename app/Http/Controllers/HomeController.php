@@ -173,7 +173,8 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet d\'entrée de formation',
         'techs' => [
-          'HTML', 'CSS',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -183,7 +184,8 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: affiche de film',
         'techs' => [
-          'HTML', 'CSS',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -193,7 +195,8 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: création d\'un framework CSS',
         'techs' => [
-          'HTML', 'CSS',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -203,7 +206,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: présentation de données API',
         'techs' => [
-          'JavaScript', 'HTML', 'CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -213,7 +218,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de fin de formation: Rédaction démocratique',
         'techs' => [
-          'JavaScript (NodeJS, jQuery)', 'HTML', 'CSS',
+          'JavaScript (NodeJS, jQuery)',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -223,7 +230,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet d\'afterwork: bataille navele',
         'techs' => [
-          'JavaScript', 'HTML', 'CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -233,7 +242,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: Trombinoscope de la formation',
         'techs' => [
-          'JavaScript', 'HTML', 'CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -243,7 +254,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: Utilisation d\'API',
         'techs' => [
-          'JavaScript', 'HTML', 'CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -253,7 +266,9 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: application graphique',
         'techs' => [
-          'JavaScript', 'HTML', 'CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
         ],
       ),
       array(
@@ -263,7 +278,21 @@ class HomeController extends BaseController
         'image' => 'github.png',
         'description' => 'Projet de formation: roman photo',
         'techs' => [
-          'HTML', 'CSS',
+          'HTML',
+          'CSS',
+        ],
+      ),
+      array(
+        'name' => 'Portfolio',
+        'startDate' => '2018-10-18',
+        'url' => 'https://github.com/metallou/portfolio2',
+        'image' => 'github.png',
+        'description' => 'Site de présentation',
+        'techs' => [
+          'PHP (Laravel)',
+          'JavaScript (Vue)',
+          'HTML (Blade)',
+          'CSS (Bootstrap)',
         ],
       ),
     ];

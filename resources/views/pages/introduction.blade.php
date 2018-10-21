@@ -55,7 +55,7 @@ Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occult
 Primi igitur omnium statuuntur Epigonus et Eusebius ob nominum gentilitatem oppressi. praediximus enim Montium sub ipso vivendi termino his vocabulis appellatos fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos.
             </pre>
             <p class="text-center">
-                <a href="#" class="btn btn-primary" role="button">
+                <a href="medias/Kévin-CASTEJON.pdf" download class="btn btn-primary" role="button">
                     <span class="d-flex align-items-center">
                       <i class="fas fa-file-pdf fa-3x"></i>
                       <span class="h2 p-0 m-0 ml-3">CV</span>
