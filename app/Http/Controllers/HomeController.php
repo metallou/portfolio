@@ -20,6 +20,7 @@ class HomeController extends BaseController
     $aModel = array(
       'image' => 'profile.jpg',
       'age' => $age,
+      'address' => '104A boulevard Charles Livon, 13007 Marseille',
       'mobile' => '+33647493737',
       'email' => 'kevincastejon13@gmail.com',
       'linkedin' => 'https://fr.linkedin.com/in/k%C3%A9vin-castejon-61925a134',
