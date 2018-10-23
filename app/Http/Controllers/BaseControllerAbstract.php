@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use View;
 
-class BaseController extends Controller
+abstract class BaseControllerAbstract extends ControllerAbstract
 {
   public function __construct()
   {

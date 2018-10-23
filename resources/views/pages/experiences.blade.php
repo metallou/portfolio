@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="card-body container-fluid">
-  @foreach($aExperiences as $aExperience)
+  @foreach($aData['aExperiences'] as $aExperience)
     <section class="border rounded @unless($loop->first) mt-5 @endunless">
       <h2 class="d-inline-block h2 text-primary">{{ $aExperience['name'] }}</h2>
       <h3 class="d-inline-block h3 text-secondary">{{ $aExperience['title'] }}</h2>

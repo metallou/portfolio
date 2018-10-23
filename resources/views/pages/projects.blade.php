@@ -7,7 +7,7 @@
 @section('content')
 <div class="card-body container-fluid">
   <div class="row">
-    @foreach($aProjects as $aProject)
+    @foreach($aData['aProjects'] as $aProject)
       <section class="col-lg-3 col-md-4 col-sm-6">
         <div class="border rounded p-2 m-1 my-3">
           <figure class="text-center m-0">
