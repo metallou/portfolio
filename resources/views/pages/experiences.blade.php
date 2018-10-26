@@ -15,7 +15,7 @@
         <i>{{ $aExperience['techs'] }}</i>
       @endisset
       <div class="text-right">
-        <p class="d-inline-block m-0 bg-dark border border-dark rounded text-white p-2">
+        <p class="d-inline-block m-0 bg-dark rounded text-white p-2">
           <i class="fas fa-calendar-alt fa-2x"></i>
           <span>{{ $aExperience['startDate'] }}</span>
           @unless($aExperience['startDate'] === $aExperience['endDate'])

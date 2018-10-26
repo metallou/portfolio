@@ -156,7 +156,7 @@ final class HomeResource extends BaseResourceAbstract
 
     $aProjectsRaw = [
       array(
-        'name' => 'Journal',
+        'name' => 'L\'Aberration',
         'startDate' => '2016-10-1',
         'github' => 'https://github.com/metallou/journal',
         'url' => 'https://metallou.github.io/journal',
@@ -168,7 +168,7 @@ final class HomeResource extends BaseResourceAbstract
         ],
       ),
       array(
-        'name' => 'Affiche de film',
+        'name' => 'Halloween',
         'startDate' => '2016-10-27',
         'github' => 'https://github.com/metallou/movie-poster',
         'url' => 'https://metallou.github.io/movie-poster',
@@ -210,7 +210,7 @@ final class HomeResource extends BaseResourceAbstract
         'github' => 'https://github.com/metallou/demoscript',
         'url' => 'https://demoscript.herokuapp.com',
         'image' => 'demoscript.png',
-        'description' => 'Projet de fin de formation: Rédaction démocratique',
+        'description' => 'Projet de fin de formation',
         'techs' => [
           'JavaScript (NodeJS, jQuery)',
           'HTML',
@@ -223,7 +223,7 @@ final class HomeResource extends BaseResourceAbstract
         'github' => 'https://github.com/metallou/aquabellum',
         'url' => 'https://metallou.github.io/aquabellum',
         'image' => 'aquabellum.png',
-        'description' => 'Projet d\'afterwork: bataille navele',
+        'description' => 'Projet d\'afterwork de la formation',
         'techs' => [
           'JavaScript',
           'HTML',
@@ -257,7 +257,7 @@ final class HomeResource extends BaseResourceAbstract
         ],
       ),
       array(
-        'name' => 'SIMPLe Graphics',
+        'name' => 'SIMPLe Trip to MARS',
         'startDate' => '2016-12-06',
         'github' => 'https://github.com/metallou/SIMPLe-graphics',
         'url' => 'https://metallou.github.io/SIMPLe-graphics',
@@ -270,7 +270,7 @@ final class HomeResource extends BaseResourceAbstract
         ],
       ),
       array(
-        'name' => 'Roman Photo',
+        'name' => 'Sausage Kittens',
         'startDate' => '2016-11-03',
         'github' => 'https://github.com/metallou/roman-photo',
         'url' => 'https://metallou.github.io/roman-photo',
