@@ -1,9 +1,13 @@
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-window.Vue = require('vue');
+$(document).ready(function() {
+  $('.JSproject').on('mouseenter', function(e) {
+    $(this).addClass('border-dark');
+    $(this).find('.JSimage').first().css('opacity', '0.5');
+    $(this).find('.JSoverlay').first().removeClass('invisible');
+  });
+  $('.JSproject').on('mouseleave', function(e) {
+    $(this).removeClass('border-dark');
+    $(this).find('.JSimage').first().css('opacity', '1');
+    $(this).find('.JSoverlay').first().addClass('invisible');
+  });
+});
 

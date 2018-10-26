@@ -9,5 +9,8 @@
 <script src="js/app.js" defer></script>
 <link href="css/app.css" rel="stylesheet">
 
+<script src="js/pages/@yield('page').js" defer></script>
+<link href="css/pages/@yield('page').css" rel="stylesheet">
+
 <title>Kévin CASTEJON - @yield('title')</title>
 

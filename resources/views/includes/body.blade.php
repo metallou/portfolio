@@ -8,5 +8,3 @@
   </main>
 </div>
 
-<script src="js/pages/@yield('page').js" defer></script>
-

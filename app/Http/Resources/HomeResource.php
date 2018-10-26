@@ -158,8 +158,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Journal',
         'startDate' => '2016-10-1',
-        'url' => 'https://github.com/metallou/journal',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/journal',
+        'url' => 'https://metallou.github.io/journal',
+        'image' => 'journal.png',
         'description' => 'Projet d\'entrée de formation',
         'techs' => [
           'HTML',
@@ -169,8 +170,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Affiche de film',
         'startDate' => '2016-10-27',
-        'url' => 'https://github.com/metallou/affiche',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/movie-poster',
+        'url' => 'https://metallou.github.io/movie-poster',
+        'image' => 'movie-poster.png',
         'description' => 'Projet de formation: affiche de film',
         'techs' => [
           'HTML',
@@ -180,8 +182,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'CSS Framework',
         'startDate' => '2016-11-16',
-        'url' => 'https://github.com/metallou/cssframework',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/CSS-framework',
+        'url' => 'https://metallou.github.io/CSS-framework',
+        'image' => 'CSS-framework.png',
         'description' => 'Projet de formation: création d\'un framework CSS',
         'techs' => [
           'HTML',
@@ -191,8 +194,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Parcs et Jardins',
         'startDate' => '2017-01-27',
-        'url' => 'https://github.com/metallou/ParcsEtJardins',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/parcs-jardins',
+        'url' => 'https://metallou.github.io/parcs-jardins',
+        'image' => 'parcs-jardins.png',
         'description' => 'Projet de formation: présentation de données API',
         'techs' => [
           'JavaScript',
@@ -203,8 +207,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Demoscript',
         'startDate' => '2017-04-28',
-        'url' => 'https://github.com/metallou/demoscript',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/demoscript',
+        'url' => 'https://demoscript.herokuapp.com',
+        'image' => 'demoscript.png',
         'description' => 'Projet de fin de formation: Rédaction démocratique',
         'techs' => [
           'JavaScript (NodeJS, jQuery)',
@@ -215,8 +220,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Aquabellum',
         'startDate' => '2017-02-26',
-        'url' => 'https://github.com/metallou/naval_battle',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/aquabellum',
+        'url' => 'https://metallou.github.io/aquabellum',
+        'image' => 'aquabellum.png',
         'description' => 'Projet d\'afterwork: bataille navele',
         'techs' => [
           'JavaScript',
@@ -227,8 +233,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Trombinoscope',
         'startDate' => '2016-11-24',
-        'url' => 'https://github.com/metallou/trombino',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/trombino',
+        'url' => 'https://metallou.github.io/trombino',
+        'image' => 'trombino.png',
         'description' => 'Projet de formation: Trombinoscope de la formation',
         'techs' => [
           'JavaScript',
@@ -239,8 +246,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'ISS Live',
         'startDate' => '2017-02-08',
-        'url' => 'https://github.com/metallou/ISS-live',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/ISS-live',
+        'url' => 'https://metallou.github.io/ISS-live',
+        'image' => 'ISS-live.png',
         'description' => 'Projet de formation: Utilisation d\'API',
         'techs' => [
           'JavaScript',
@@ -251,8 +259,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'SIMPLe Graphics',
         'startDate' => '2016-12-06',
-        'url' => 'https://github.com/metallou/SIMPLe_graphics',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/SIMPLe-graphics',
+        'url' => 'https://metallou.github.io/SIMPLe-graphics',
+        'image' => 'SIMPLe-graphics.png',
         'description' => 'Projet de formation: application graphique',
         'techs' => [
           'JavaScript',
@@ -263,8 +272,9 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Roman Photo',
         'startDate' => '2016-11-03',
-        'url' => 'https://github.com/metallou/romanphoto',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/roman-photo',
+        'url' => 'https://metallou.github.io/roman-photo',
+        'image' => 'roman-photo.png',
         'description' => 'Projet de formation: roman photo',
         'techs' => [
           'HTML',
@@ -274,12 +284,13 @@ final class HomeResource extends BaseResourceAbstract
       array(
         'name' => 'Portfolio',
         'startDate' => '2018-10-18',
-        'url' => 'https://github.com/metallou/portfolio2',
-        'image' => 'github.png',
+        'github' => 'https://github.com/metallou/portfolio',
+        'url' => 'https://kevin-castejon.herokuapp.com',
+        'image' => 'portfolio.png',
         'description' => 'Site de présentation',
         'techs' => [
           'PHP (Laravel)',
-          'JavaScript (Vue)',
+          'JavaScript (jQuery)',
           'HTML (Blade)',
           'CSS (Bootstrap)',
         ],
