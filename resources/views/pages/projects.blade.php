@@ -14,14 +14,17 @@
           <img class="card-img-top" src="images/projects/{{ $aProject['image'] }}" alt="{{ $aProject['name'] }}" />
           <div class="card-body">
             <div class="card-title font-weight-bold">{{ $aProject['description'] }}</div>
-            <div class="card-text">{{ $aProject['techs'] }}</div>
+            <div class="card-text">
+              <i class="fas fa-cogs fa-2x"></i>
+              <i class="ml-1">{{ $aProject['techs'] }}</i>
+            </div>
           </div>
           <div class="card-footer bg-dark text-center text-nowrap">
             <a href="{{ $aProject['github'] }}" target="_blank" class="@if(empty($aProject['github'])) invisible @endif mr-4">
-              <i class="fab fa-github fa-4x text-white"></i>
+              <i class="fab fa-github fa-3x text-white"></i>
             </a>
             <a href="{{ $aProject['url'] }}" target="_blank" class="ml-4">
-              <i class="fas fa-globe fa-4x text-white"></i>
+              <i class="fas fa-globe fa-3x text-white"></i>
             </a>
           </div>
         </div>
