@@ -39,6 +39,15 @@ final class HomeController extends BaseControllerAbstract
   public function cv(): View
   {
     $aResource = HomeResource::cv();
+    $aResource['anonymous'] = false;
+
+    return view('pages.cv', $aResource);
+  }
+
+  public function cvAnonymous(): View
+  {
+    $aResource = HomeResource::cv();
+    $aResource['anonymous'] = true;
 
     return view('pages.cv', $aResource);
   }

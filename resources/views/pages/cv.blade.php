@@ -14,23 +14,47 @@
     <main class="d-flex flex-row justify-content-around h-100 m-5">
       <div class="d-flex flex-column justify-content-between w-100 mx-5">
         <section class="p-3 my-3 bg-dark text-white">
-          <h2 class="text-center h2">Kévin CASTEJON</h2>
+          @if(!$anonymous)
+            <h2 class="text-center h2">Kévin CASTEJON</h2>
+          @endif
           <h1 class="text-center h1">Web Developper</h1>
           <h3 class="text-center h3">(Full Stack)</h3>
         </section>
-        <section class="p-3 my-3">
-          <h2 class="text-center h2 border-bottom border-dark">Techniques</h2>
-          <dl class="row">
-            @foreach($aData['aTechs'] as $label => $aTechs)
-              <dt class="col-2">{{ $label }}</dt>
-              <dd class="col-10">
-                @foreach($aTechs as $tech)
-                  <p class="m-0">{{ $tech }}</p>
-                @endforeach
-              </dd>
-            @endforeach
-          </dl>
-        </section>
+        @if(!$anonymous)
+          <section class="p-3 my-3">
+            <h2 class="text-center h2 border-bottom border-dark">Informations</h2>
+            <ul class="fa-ul">
+              <li class="my-3">
+                <span class="fa-li"><i class="fas fa-user fa-2x"></i></span>
+                <span class="ml-3">{{ $aData['age'] }} ans, autonome, autodidacte, perfectionniste</span>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                <span class="ml-3">{{ $aData['address'] }}</span>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fas fa-mobile fa-2x"></i></span>
+                <a class="ml-3" href="tel:{{ $aData['mobile'] }}">{{ $aData['mobile'] }}</a>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fas fa-at fa-2x"></i></span>
+                <a class="ml-3" href="mailto:{{ $aData['email'] }}">{{ $aData['email'] }}</a>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fab fa-linkedin fa-2x"></i></span>
+                <a class="ml-3" href="{{ $aData['linkedin'] }}" target="_blank">{{ $aData['linkedin'] }}</a>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fab fa-github fa-2x"></i></span>
+                <a class="ml-3" href="{{ $aData['github'] }}" target="_blank">{{ $aData['github'] }}</a>
+              </li>
+              <li class="my-3">
+                <span class="fa-li"><i class="fas fa-home fa-2x"></i></span>
+                <a class="ml-3" href="{{ $aData['portfolio'] }}" target="_blank">{{ $aData['portfolio'] }}</a>
+              </li>
+            </ul>
+          </section>
+        @endif
         <section class="p-3 my-3 bg-dark text-white">
           <h2 class="text-center h2 border-bottom border-light">Compétences</h2>
           <ul class="list-unstyled m-0">
@@ -54,37 +78,17 @@
       </div>
       <div class="d-flex flex-column justify-content-between w-100 mx-5">
         <section class="p-3 my-3">
-          <h2 class="text-center h2 border-bottom border-dark">Informations</h2>
-          <ul class="fa-ul">
-            <li class="my-3">
-              <span class="fa-li"><i class="fas fa-user fa-2x"></i></span>
-              <span class="ml-3">{{ $aData['age'] }} ans, autonome, autodidacte, perfectionniste</span>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fas fa-map-marker-alt fa-2x"></i></span>
-              <span class="ml-3">{{ $aData['address'] }}</span>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fas fa-mobile fa-2x"></i></span>
-              <a class="ml-3" href="tel:{{ $aData['mobile'] }}">{{ $aData['mobile'] }}</a>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fas fa-at fa-2x"></i></span>
-              <a class="ml-3" href="mailto:{{ $aData['email'] }}">{{ $aData['email'] }}</a>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fab fa-linkedin fa-2x"></i></span>
-              <a class="ml-3" href="{{ $aData['linkedin'] }}" target="_blank">{{ $aData['linkedin'] }}</a>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fab fa-github fa-2x"></i></span>
-              <a class="ml-3" href="{{ $aData['github'] }}" target="_blank">{{ $aData['github'] }}</a>
-            </li>
-            <li class="my-3">
-              <span class="fa-li"><i class="fas fa-home fa-2x"></i></span>
-              <a class="ml-3" href="{{ $aData['portfolio'] }}" target="_blank">{{ $aData['portfolio'] }}</a>
-            </li>
-          </ul>
+          <h2 class="text-center h2 border-bottom border-dark">Techniques</h2>
+          <dl class="row">
+            @foreach($aData['aTechs'] as $label => $aTechs)
+              <dt class="col-2">{{ $label }}</dt>
+              <dd class="col-10">
+                @foreach($aTechs as $tech)
+                  <p class="m-0">{{ $tech }}</p>
+                @endforeach
+              </dd>
+            @endforeach
+          </dl>
         </section>
         <section class="p-3 my-3">
           <h2 class="text-center h2 border-bottom border-dark">Expériences</h2>

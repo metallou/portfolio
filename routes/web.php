@@ -17,3 +17,5 @@ Route::get('/experiences', 'HomeController@experiences')->name('experiences');
 Route::get('/projects', 'HomeController@projects')->name('projects');
 Route::get('/carpediem', 'HomeController@carpediem')->name('carpediem');
 Route::get('/cv', 'HomeController@cv')->name('cv');
+Route::get('/cv-anonymous', 'HomeController@cvAnonymous')->name('cvAnonymous');
+
