@@ -40,7 +40,7 @@ final class HomeResource extends BaseResourceAbstract
       $a['startDate'] = Date::parse($a['startDate'], $tz)->format('F Y');
       $a['endDate'] = array_key_exists('endDate', $a)
           ? Date::parse($a['endDate'], $tz)->format('F Y')
-          : null;
+          : '';
 
       return $a;
     };
@@ -72,22 +72,6 @@ final class HomeResource extends BaseResourceAbstract
         'endDate' => '2017-05',
       ),
       // experiences
-      array(
-        'type' => 'EXPERIENCE',
-        'name' => 'KMS',
-        'title' => 'stage de refonte du site web',
-        'location' => 'Marseille',
-        'techs' => [
-          'PHP',
-          'mySQL',
-          'JavaScript',
-          'jQuery',
-          'HTML',
-          'CSS',
-        ],
-        'startDate' => '2017-03',
-        'endDate' => '2017-03',
-      ),
       array(
         'type' => 'EXPERIENCE',
         'name' => 'SWAM',
