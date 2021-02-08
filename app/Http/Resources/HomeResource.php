@@ -126,7 +126,7 @@ final class HomeResource extends BaseResourceAbstract
         'location' => 'Marseille',
         'techs' => [
           'PHP (vanilla, Symfony + bundles, phpunit)',
-          'TypeScript (Bootstrap, Vue)
+          'TypeScript (Bootstrap, Vue)',
           'HTML (Bootstrap)',
           'CSS (SCSS, Bootstrap)',
           'Git (GitHub, actions CI/CD)',
