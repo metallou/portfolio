@@ -31,7 +31,7 @@ final class HomeResource extends BaseResourceAbstract
     $tz = config('app.timezone');
 
     $fSort = function($a1, $a2) {
-      return $a1['endDate'] < $a2['endDate'];
+      return $a1['startDate'] < $a2['startDate'];
     };
     $fMap = function($a) use ($tz) {
       if (isset($a['techs'])) {
@@ -341,7 +341,7 @@ final class HomeResource extends BaseResourceAbstract
         'PhpStorm, Vim, DataGrip',
       ],
       'Autres' => [
-        'mRemoteNG'
+        'mRemoteNG',
         'Bitwarden',
         'Discord',
       ],
