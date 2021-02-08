@@ -17,7 +17,7 @@ final class HomeResource extends BaseResourceAbstract
     return static::factory()
       ->addData('age', $age)
       ->addData('image', 'profile.jpg')
-      ->addData('address', '104A boulevard Charles Livon, 13007 Marseille')
+      ->addData('address', '75 rue Sauveur Tobelem, 13007 Marseille')
       ->addData('mobile', '+33647493737')
       ->addData('email', 'kevincastejon13@gmail.com')
       ->addData('linkedin', 'https://fr.linkedin.com/in/k%C3%A9vin-castejon-61925a134')
@@ -38,7 +38,9 @@ final class HomeResource extends BaseResourceAbstract
         $a['techs'] = implode(', ', $a['techs']);
       }
       $a['startDate'] = Date::parse($a['startDate'], $tz)->format('F Y');
-      $a['endDate'] = Date::parse($a['endDate'], $tz)->format('F Y');
+      $a['endDate'] = array_key_exists('endDate', $a)
+          ? Date::parse($a['endDate'], $tz)->format('F Y')
+          : null;
 
       return $a;
     };
@@ -132,6 +134,20 @@ final class HomeResource extends BaseResourceAbstract
         ],
         'startDate' => '2017-07',
         'endDate' => '2018-10',
+      ),
+      array(
+        'type' => 'EXPERIENCE',
+        'name' => 'Jalis',
+        'title' => 'Développeur web',
+        'location' => 'Marseille',
+        'techs' => [
+          'PHP (vanilla, Symfony + bundles, phpunit)',
+          'TypeScript (Bootstrap, Vue)
+          'HTML (Bootstrap)',
+          'CSS (SCSS, Bootstrap)',
+          'Git (GitHub, actions CI/CD)',
+        ],
+        'startDate' => '2018-11',
       ),
     ];
     usort($aExperiencesRaw, $fSort);
@@ -328,22 +344,22 @@ final class HomeResource extends BaseResourceAbstract
     $aExperiences = array_filter($aIN2['aData']['aExperiences'], $fFilterClosure('EXPERIENCE'));
     $aTechs = array(
       'Web' => [
-        'PHP (Laravel, Symfony)',
-        'JavaScript (NodeJS, ExpressJS, jQuery)',
-        'SQL (mySQL, mySQL Workbench)',
-        'noSQL (MongoDB, mLab)',
-        'HTML (Blade, Twig, Bootstrap)',
-        'CSS (SCSS, Bootstrap)',
+        'Synfony',
+        'Doctrine',
+        'VueJS',
+        'TypeScript',
+        'Xunit',
+        'webpack',
       ],
       'Système' => [
-        'Git (shell, SourceTree)',
+        'Git (shell, GitHub)',
         'Linux (shell)',
-        'Netbeans, Vim',
+        'PhpStorm, Vim, DataGrip',
       ],
       'Autres' => [
-        'FileZilla',
-        'Putty',
-        'Microsoft Office',
+        'mRemoteNG'
+        'Bitwarden',
+        'Discord',
       ],
     );
     $aSkills = [
